@@ -10,46 +10,67 @@ class StackWidget extends StatelessWidget {
       child: Stack(
         alignment: Alignment.topCenter,
         children: <Widget>[
-          Align(
-            alignment: Alignment.topRight,
+          Positioned(
+            left: 25,
+            top: 50,
             child: Container(
               width: 200,
               height: 200,
               color: Colors.red,
             ),
           ),
-          Align(
-            alignment: Alignment.topLeft,
-            child: Container(
-              width: 200,
-              height: 200,
-              color: Colors.green,
-            ),
-          ),
-          Align(
-            alignment: Alignment.bottomLeft,
+          Positioned(
+            left: 75,
+            top: 400,
             child: Container(
               width: 200,
               height: 200,
               color: Colors.blue,
             ),
           ),
-          Align(
-            alignment: Alignment.bottomRight,
-            child: Container(
-              width: 200,
-              height: 200,
-              color: Colors.orange,
-            ),
-          ),
-          Align(
-            alignment: Alignment.center,
-            child: Container(
-              width: 200,
-              height: 200,
-              color: Colors.pink,
-            ),
-          ),
+
+          // **** alignment examples *****
+
+          // Align(
+          //   alignment: Alignment.topRight,
+          //   child: Container(
+          //     width: 200,
+          //     height: 200,
+          //     color: Colors.red,
+          //   ),
+          // ),
+          // Align(
+          //   alignment: Alignment.topLeft,
+          //   child: Container(
+          //     width: 200,
+          //     height: 200,
+          //     color: Colors.green,
+          //   ),
+          // ),
+          // Align(
+          //   alignment: Alignment.bottomLeft,
+          //   child: Container(
+          //     width: 200,
+          //     height: 200,
+          //     color: Colors.blue,
+          //   ),
+          // ),
+          // Align(
+          //   alignment: Alignment.bottomRight,
+          //   child: Container(
+          //     width: 200,
+          //     height: 200,
+          //     color: Colors.orange,
+          //   ),
+          // ),
+          // Align(
+          //   alignment: Alignment.center,
+          //   child: Container(
+          //     width: 200,
+          //     height: 200,
+          //     color: Colors.amber,
+          //   ),
+          // ),
         ],
         // textDirection: TextDirection.rtl,
         // alignment: Alignment.bottomCenter,
