@@ -11,23 +11,49 @@ class StackWidget extends StatelessWidget {
         alignment: Alignment.topCenter,
         children: <Widget>[
           Positioned(
-            left: 25,
-            top: 50,
+            left: 65,
+            top: 95,
             child: Container(
-              width: 200,
+              width: 300,
               height: 200,
               color: Colors.red,
+              child: Image.network(
+                "https://images.newindianexpress.com/uploads/user/imagelibrary/2018/10/8/w600X390/Fahad_Fazil.jpg",
+                // fit: BoxFit.cover,
+                // fit: BoxFit.fill,
+                // fit: BoxFit.fitHeight,
+                // fit: BoxFit.fitWidth,
+                fit: BoxFit.scaleDown,
+              ), //3rd method
+              // child: Image(
+              //   image: AssetImage("assets/nani.jpg"),  2nd method
+              // ),
+              // child: Image.asset("assets/dhanush.jpg"),  //one method
             ),
           ),
           Positioned(
-            left: 75,
-            top: 400,
+            left: 65,
+            bottom: 95,
             child: Container(
-              width: 200,
+              width: 300,
               height: 200,
-              color: Colors.blue,
+              color: Colors.red,
+              child: Image.asset("assets/nani.jpg", fit: BoxFit.cover),
             ),
           ),
+          // Positioned(
+          //   left: 75,
+          //   top: 400,
+          //   child: Container(
+          //     width: 200,
+          //     height: 200,
+          //     color: Colors.green,
+          //     child: Image(
+          //       image: AssetImage("assets/dhanush.jpg"),
+          //     ),
+          //     // child: Image.asset("assets/nani.jpg"),
+          //   ),
+          // ),
 
           // **** alignment examples *****
 
